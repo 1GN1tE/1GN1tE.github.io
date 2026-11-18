@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arijeet Mondal | Database SRE @ Apple</title>
+  <meta name="description" content="Personal website of Arijeet Mondal (1GN1tE) - Database (Cassandra) SRE at Apple, M.Tech in CSE from IIT Bombay (9.77 CGPA)." />
+  <meta name="keywords" content="Arijeet Mondal, 1GN1tE, Apple, Cassandra, SRE, Database, IIT Bombay, Jadavpur University, Systems, Distributed Systems" />
+  <meta name="author" content="Arijeet Mondal" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Arijeet Mondal | Database SRE @ Apple" />
+  <meta property="og:description" content="Database (Cassandra) SRE at Apple. M.Tech CSE from IIT Bombay (9.77 CGPA). Systems, distributed databases, algorithms, and security." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://1gn1te.github.io/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="resources/abstract-logo_200x200.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span>Arijeet Mondal</span>
+        <span class="logo-badge">1GN1tE</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle dark/light mode">
+            <!-- Moon icon (shows in dark) -->
+            <svg id="moonIcon" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- Sun icon (shows in light) -->
+            <svg id="sunIcon" class="icon" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="container">
+    <section class="hero" id="about">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-row">
+            <span class="company-pill">
+              <img src="resources/Apple_logo_black.svg" alt="Apple" class="apple-logo-img" />
+              Database SRE @ Apple
+            </span>
+            <span class="status-badge">
+              <span class="status-dot"></span>
+              Apache Cassandra
+            </span>
+          </div>
+
+          <h1>
+            Hi, I'm <span class="hero-title-gradient">Arijeet Mondal</span>
+          </h1>
+          <p class="hero-subtitle">
+            Database (C*) SRE at Apple • Systems Enthusiast • IIT Bombay Alum
+          </p>
+          <p class="hero-desc">
+            Passionate developer, systems engineer, and hobbiest security researcher. Currently engineering resilient, ultra-reliable distributed database infrastructure powering critical workloads at scale. Former M.Tech CSE student at IIT Bombay.
+          </p>
+
+          <div class="hero-cta">
+            <a href="mailto:arijeet123mondal@gmail.com" class="btn btn-primary">
+              <svg class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              Get in Touch
+            </a>
+            <a href="https://github.com/1GN1tE" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub (1GN1tE)
+            </a>
+            <a href="https://www.linkedin.com/in/arijeet-mondal-91bb5319a/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="avatar-wrapper">
+          <div class="avatar-ring"></div>
+          <img src="resources/abstract-logo_200x200.jpg" alt="Arijeet Mondal" class="avatar-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="section-header">
+        <span class="section-tag">// Professional Experience</span>
+        <h2 class="section-title">Where I Work</h2>
+      </div>
+
+      <div class="card exp-spotlight">
+        <div class="exp-header">
+          <div class="exp-title-group">
+            <h3>
+              Site Reliability Engineer (Database)
+              <span class="company-pill" style="font-size: 0.8rem;">
+                <img src="resources/Apple_logo_black.svg" alt="Apple" class="apple-logo-img" />
+                Apple
+              </span>
+            </h3>
+            <div class="exp-company">Database Reliability Engineering (Apache Cassandra)</div>
+          </div>
+          <span class="exp-date">Currently Working</span>
+        </div>
+
+        <p style="color: var(--text-muted); font-size: 0.96rem;">
+          Specializing in maintaining, optimizing, and operating massively distributed, high-throughput Apache Cassandra clusters backing mission-critical Apple services.
+        </p>
+
+        <ul class="exp-bullets">
+          <li><strong>Cluster Reliability & Scalability:</strong> Overseeing multi-datacenter Apache Cassandra topologies, ensuring five-nines availability, consistency tuning, and disaster recovery readiness.</li>
+          <li><strong>Performance Tuning & Diagnostics:</strong> Investigating query latencies, read/write repair overhead, compaction strategies, and JVM garbage collection optimization.</li>
+          <li><strong>Automation & Infrastructure as Code:</strong> Developing internal tools, monitors, and automated runbooks for seamless node provisioning, safe rolling upgrades, and proactive telemetry.</li>
+          <li><strong>Incident Response & Chaos Engineering:</strong> Practicing rigorous post-incident postmortems, SLO/SLI tracking, and resilience testing against network partitions and disk failures.</li>
+        </ul>
+
+        <div class="tag-cloud" style="margin-top: 14px;">
+          <span class="tag highlight">Apache Cassandra</span>
+          <span class="tag highlight">Distributed Systems</span>
+          <span class="tag">Site Reliability Engineering</span>
+          <span class="tag">Observability & SLOs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="section-header">
+        <span class="section-tag">// Academic Background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- IIT Bombay -->
+        <div class="card edu-card">
+          <div>
+            <div class="edu-degree">Master of Technology (M.Tech) in Computer Science & Engineering</div>
+            <div class="edu-institution">Indian Institute of Technology Bombay (IIT Bombay), Maharashtra, India</div>
+            <div class="edu-details">
+              Focus areas: Systems, Algorithms, Software Security, Distributed Computing
+            </div>
+            <div class="tag-cloud" style="margin-top: 10px;">
+              <span class="tag">Systems</span>
+              <span class="tag">Security</span>
+              <span class="tag">Algorithms</span>
+            </div>
+          </div>
+          <div class="grade-badge spotlight">
+            <span class="grade-val">9.77</span>
+            <span class="grade-label">CGPA</span>
+          </div>
+        </div>
+
+        <!-- Jadavpur University -->
+        <div class="card edu-card">
+          <div>
+            <div class="edu-degree">Bachelor of Technology (B.Tech) in Electrical Engineering</div>
+            <div class="edu-institution">Jadavpur University, West Bengal, India</div>
+            <div class="edu-details">
+              Year: 2019 - 2023 • Strong foundation in core engineering, computational logic, and systems
+            </div>
+          </div>
+          <div class="grade-badge">
+            <span class="grade-val">8.33</span>
+            <span class="grade-label">CGPA</span>
+          </div>
+        </div>
+
+        <!-- Higher Secondary -->
+        <div class="card edu-card">
+          <div>
+            <div class="edu-degree">Higher Secondary Education (10+2)</div>
+            <div class="edu-institution">Convent of Jesus and Mary, West Bengal, India</div>
+            <div class="edu-details">Year: 2017 - 2019 • Pure Science</div>
+          </div>
+          <div class="grade-badge">
+            <span class="grade-val">85.23%</span>
+            <span class="grade-label">Percentage</span>
+          </div>
+        </div>
+
+        <!-- Secondary -->
+        <div class="card edu-card">
+          <div>
+            <div class="edu-degree">Secondary Education (High School)</div>
+            <div class="edu-institution">Convent of Jesus and Mary, West Bengal, India</div>
+            <div class="edu-details">Completed: 2017</div>
+          </div>
+          <div class="grade-badge">
+            <span class="grade-val">91.60%</span>
+            <span class="grade-label">Percentage</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="section-header">
+        <span class="section-tag">// Technical Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="card skill-category">
+          <h4>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+            Distributed Databases & SRE
+          </h4>
+          <div class="tag-cloud">
+            <span class="tag highlight">Apache Cassandra</span>
+            <span class="tag highlight">Distributed Systems</span>
+            <span class="tag">High Availability</span>
+            <span class="tag">Data Consistency</span>
+            <span class="tag">Observability</span>
+            <span class="tag">SLO / SLI Tracking</span>
+          </div>
+        </div>
+
+        <div class="card skill-category">
+          <h4>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            Languages & Core Systems
+          </h4>
+          <div class="tag-cloud">
+            <span class="tag highlight">C / C++</span>
+            <span class="tag highlight">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">Go</span>
+            <span class="tag">Bash / Shell</span>
+            <span class="tag">Linux Internals</span>
+            <span class="tag">Socket Programming</span>
+            <span class="tag">Multi-threading</span>
+          </div>
+        </div>
+
+        <div class="card skill-category">
+          <h4>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            Security & Reverse Engineering
+          </h4>
+          <div class="tag-cloud">
+            <span class="tag highlight">CTF Competitions</span>
+            <span class="tag">Reverse Engineering</span>
+            <span class="tag">Binary Exploitation</span>
+            <span class="tag">Software Security</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="card contact-card">
+        <h2>Let's Connect</h2>
+        <p>
+          Feel free to drop a line!
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:arijeet123mondal@gmail.com" class="btn btn-primary">
+            <svg class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+            arijeet123mondal@gmail.com
+          </a>
+
+          <a href="https://github.com/1GN1tE" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+
+          <a href="https://www.linkedin.com/in/arijeet-mondal-91bb5319a/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        Designed for <strong>Arijeet Mondal</strong> (1GN1tE) • Hosted on GitHub Pages
+      </div>
+      <div>
+        &copy; <span id="year"></span> Arijeet Mondal. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
